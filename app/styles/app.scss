@@ -73,8 +73,44 @@ h1 {
 	font-size: clamp(2.5rem, 6vw, 4rem);
 }
 
+.blog-post {
+  max-width: 42rem;
+  margin-top: 2rem;
+}
+
+.blog-post header {
+  margin-bottom: 1.5rem;
+}
+
+.blog-post header p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: var(--muted-foreground);
+}
+
+.blog-post h3 {
+  margin: 1.5rem 0 0.5rem;
+}
+
 .main-content {
   padding: 4rem clamp(1rem, 3vw, 2rem) 1.5rem;
+}
+
+.sidebar-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  border: 0;
+  background: rgb(0 0 0 / 25%);
+  cursor: pointer;
+}
+
+.sidebar-menu summary {
+  z-index: 3;
+}
+
+.sidebar {
+  z-index: 2;
 }
 
 .sidebar-menu {
@@ -133,8 +169,8 @@ h1 {
 	z-index: 1;
 	width: min(18rem, 85vw);
 	padding: 5rem 1.5rem 1.5rem;
-	background: var(--sidebar);
-	color: var(--sidebar-foreground);
+	background: var(--foreground);
+	color: var(--sidebar);
 	box-shadow: 0.5rem 0 1.5rem rgb(0 0 0 / 12%);
 	transform: translateX(-105%);
 	transition: transform 220ms ease;
@@ -173,7 +209,7 @@ h1 {
   right: 2rem;
   z-index: 3;
   display: flex;
-  gap: 1.25rem;
+  gap: 1rem;
   font-size: 1rem;
 }
 
@@ -184,6 +220,15 @@ h1 {
 
 .social-links a:hover {
   text-decoration: underline;
+}
+
+.social-separator {
+  width: 0.25rem;
+  height: 0.25rem;
+  flex: 0 0 auto;
+  align-self: center;
+  border-radius: 50%;
+  background: currentColor;
 }
 
 body {
