@@ -22,11 +22,11 @@ import { LinkTo } from '@ember/routing';
       <aside class="sidebar">
         
 
-        <nav aria-label="Main navigation" {{on "click" this.closeMenu}}>
-          <LinkTo @route="index">Home</LinkTo>
-          <LinkTo @route="about">About Me</LinkTo>
-          <LinkTo @route="blog">Blog</LinkTo>
-          <LinkTo @route="my-projects">Projects</LinkTo>
+        <nav aria-label="Main navigation">
+          <LinkTo @route="index" {{on "click" this.closeMenu}}>Home</LinkTo>
+          <LinkTo @route="about" {{on "click" this.closeMenu}}>About Me</LinkTo>
+          <LinkTo @route="blog" {{on "click" this.closeMenu}}>Blog</LinkTo>
+          <LinkTo @route="my-projects" {{on "click" this.closeMenu}}>Projects</LinkTo>
 
         </nav>
       </aside>

@@ -10,8 +10,6 @@ import { pageTitle } from 'ember-page-title';
       <h2>Post title goes here</h2>
       <p>
         <time datetime="2026-10-29">October 29, 2026</time>
-        <span> · </span>
-        <span>By Seraphine Almeida</span>
       </p>
     </header>
 
