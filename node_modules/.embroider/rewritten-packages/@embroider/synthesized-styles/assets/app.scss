@@ -74,7 +74,7 @@ h1 {
 }
 
 .blog-post {
-  max-width: 42rem;
+  max-width: 50rem;
   margin-top: 2rem;
 }
 
@@ -229,6 +229,11 @@ h1 {
   align-self: center;
   border-radius: 50%;
   background: currentColor;
+}
+
+.small-size-text {
+	font-size: 0.9rem;
+	line-height: 1.5;
 }
 
 body {

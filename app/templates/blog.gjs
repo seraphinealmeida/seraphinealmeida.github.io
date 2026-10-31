@@ -1,21 +1,20 @@
 import { pageTitle } from 'ember-page-title';
+import { LinkTo } from '@ember/routing';
 
 <template>
   {{pageTitle "Blog"}}
-
   <h1>Blog</h1>
+  {{#each @model as |post|}}
+    <article class="blog-post">
+      <h3>{{post.title}}</h3> 
+      <p class="small-size-text">   
+        <time datetime="{{post.date}}">{{post.date}}</time> 
+      </p> 
+      <p>{{post.excerpt}}</p> 
 
-  <article class="blog-post">
-    <header>
-      <h2>Post title goes here</h2>
-      <p>
-        <time datetime="2026-10-29">October 29, 2026</time>
-      </p>
-    </header>
-
-    <p>Write a short introduction to the post here.</p>
-
-    <h3>A section heading</h3>
-    <p>Write the main content here. Add more paragraphs and headings as needed.</p>
-  </article>
+      <LinkTo @route="blog-post" @model={{post.slug}}>
+        Read more...
+      </LinkTo> 
+    </article> 
+  {{/each}}
 </template>
