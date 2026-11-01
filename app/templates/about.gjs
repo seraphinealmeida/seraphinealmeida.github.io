@@ -17,5 +17,4 @@ import { pageTitle } from 'ember-page-title';
   <br> 
   Thanks for stopping by!
   </p> 
-
 </template>
