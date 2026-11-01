@@ -1,22 +1,54 @@
-## Hi there 👋
-### My name is Sarah!
+# seraphinealmeida
 
-<!--
-**seraphinealmeida/seraphinealmeida** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+This README outlines the details of collaborating on this Ember application.
+A short introduction of this app could easily go here.
 
-Here are some ideas to get you started:
---> 
-- 🔭 I’m currently working on finishing up my undergraduate degree in Computer Engineering (with a minor in Computer Science!)
-- 🌱 I’m currently learning web dev (just for fun) 😁
-- 👯 I’m looking to collaborate on _anything_ circuits, just reach out!
-- 🤔 I’m looking for help with learning digital signal processing 
-- 💬 Ask me about FPGAs
-  - They may have become my special interest 🙃
-  - My projects include...
-    - SHA 256 Encryption Module
-    - Canny Edge Detector
-    - Approximate Computation
-    - Approximate Communication
-  -  In summary, I _love_ digital logic design!
-- ⚡ "We can't afford to be neutral on a moving train"
+## Prerequisites
 
+You will need the following things properly installed on your computer.
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/) (with npm)
+- [Google Chrome](https://google.com/chrome/)
+
+## Installation
+
+- `git clone <repository-url>` this repository
+- `cd seraphinealmeida`
+- `npm install`
+
+## Running / Development
+
+- `npm run start`
+- Visit your app at [http://localhost:4200](http://localhost:4200).
+- Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+
+### Code Generators
+
+Make use of the many generators for code, try `npm exec ember help generate` for more details
+
+### Running Tests
+
+- `npm run test`
+
+### Linting
+
+- `npm run lint`
+- `npm run lint:fix`
+
+### Building
+
+- `npm exec vite build --mode development` (development)
+- `npm run build` (production)
+
+### Deploying
+
+Specify what it takes to deploy your app.
+
+## Further Reading / Useful Links
+
+- [ember.js](https://emberjs.com/)
+- [Vite](https://vite.dev)
+- Development Browser Extensions
+  - [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
+  - [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)

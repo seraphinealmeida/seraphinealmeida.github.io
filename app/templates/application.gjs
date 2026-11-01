@@ -1,5 +1,13 @@
 import { LinkTo } from '@ember/routing';
 
+function closeMenu(event) {
+  const menu = event.currentTarget.closest('.sidebar-menu');
+
+  if (menu) {
+    menu.open = false;
+  }
+}
+
 <template>
   <div class="site-layout">
     <details class="sidebar-menu">
@@ -16,17 +24,17 @@ import { LinkTo } from '@ember/routing';
         class="sidebar-backdrop"
         type="button"
         aria-label="Close navigation menu"
-        {{on "click" this.closeMenu}}
+        {{on "click" closeMenu}}
       ></button>
 
       <aside class="sidebar">
         
 
         <nav aria-label="Main navigation">
-          <LinkTo @route="index" {{on "click" this.closeMenu}}>Home</LinkTo>
-          <LinkTo @route="about" {{on "click" this.closeMenu}}>About Me</LinkTo>
-          <LinkTo @route="blog" {{on "click" this.closeMenu}}>Blog</LinkTo>
-          <LinkTo @route="my-projects" {{on "click" this.closeMenu}}>Projects</LinkTo>
+          <LinkTo @route="index" {{on "click" closeMenu}}>Home</LinkTo>
+          <LinkTo @route="about" {{on "click" closeMenu}}>About Me</LinkTo>
+          <LinkTo @route="blog" {{on "click" closeMenu}}>Blog</LinkTo>
+          <LinkTo @route="my-projects" {{on "click" closeMenu}}>Projects</LinkTo>
 
         </nav>
       </aside>
@@ -38,7 +46,7 @@ import { LinkTo } from '@ember/routing';
         target="_blank"
         rel="noopener noreferrer"
       >LinkedIn</a>
-      <span class="social-separator" aria-hidden="true"></span>
+      <span class="separator" aria-hidden="true"></span>
       <a
         href="https://github.com/seraphinealmeida"
         target="_blank"

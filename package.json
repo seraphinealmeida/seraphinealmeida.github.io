@@ -89,5 +89,9 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "marked": "^18.1.2",
+    "yaml": "^2.9.1"
   }
 }

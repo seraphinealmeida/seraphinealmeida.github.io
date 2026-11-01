@@ -3,24 +3,20 @@ import { LinkTo } from '@ember/routing';
 <template>
     {{#if @model}}
         <article class="blog-post">
-            <h1>{{@model}}</h1> 
-            <p> 
+            <h1>{{@model.title}}</h1> 
+            <p class="author-date-text"> 
+                 
+                Seraphine Almeida ✿
                 <time datetime="{{@model.date}}">{{@model.date}}</time>
+                <hr>
             </p>
 
-            {{#each @model.sections as |section|}}
-                <section> 
-                    <h2>{{section.heading}}</h2> 
-                    {{#each section.paragraphs as |paragraph|}}
-                        <p>{{paragraph}}</p> 
-                    {{/each}}
-                </section>
-            {{/each}}
+            <div class="post-content">{{@model.content}}</div>
 
-            <LinkTo @route="blog">Return to main blog</LinkTo>
+            <LinkTo @route="blog">➥ Return to main blog</LinkTo>
         </article>
     {{else}}
         <h1>o_0 Cannot find post</h1> 
-        <LinkTo @route="blog">Return to main blog</LinkTo>
+        <LinkTo @route="blog">➥ Return to main blog</LinkTo>
     {{/if}}
 </template>            
